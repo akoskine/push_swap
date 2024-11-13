@@ -3,18 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akoskine <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: akoskine <akoskine@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 14:58:00 by akoskine          #+#    #+#             */
-/*   Updated: 2022/12/12 20:16:17 by akoskine         ###   ########.fr       */
+/*   Updated: 2024/11/13 00:07:59 by akoskine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1000
-# endif
 
 # include <stdlib.h>
 # include <unistd.h>
@@ -33,13 +30,9 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
-void	ft_putchar(char c);
 void	ft_putchar_fd(char c, int fd);
-void	ft_putendl(char *s);
 void	ft_putendl_fd(char *s, int fd);
-void	ft_putnbr(int n);
 void	ft_putnbr_fd(int n, int fd);
-void	ft_putstr(char *s);
 void	ft_putstr_fd(char *s, int fd);
 char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
@@ -57,15 +50,5 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
-void	ft_free_str(char **str);
-
-/* get_next_line */
-
-char	*ft_static_str_read(char *static_str, int fd);
-char	*ft_get_new_line(char *static_str);
-char	*ft_get_new_static_str(char *static_str);
-char	*get_next_line(int fd);
-char	*ft_static_str_check(char *str);
-char	*ft_strjoin_gnl(char *s1, char *s2);
 
 #endif

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akoskine <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: akoskine <akoskine@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 21:37:53 by akoskine          #+#    #+#             */
-/*   Updated: 2022/12/19 21:40:41 by akoskine         ###   ########.fr       */
+/*   Updated: 2024/11/13 00:07:11 by akoskine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ char	*ft_strchr(const char *s, int c)
 {
 	char	*ret;
 
-	if (!s)
-		return (0);
 	ret = (char *)s;
 	while (*ret != (char )c)
 	{
