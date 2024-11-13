@@ -6,7 +6,7 @@
 /*   By: akoskine <akoskine@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 14:58:00 by akoskine          #+#    #+#             */
-/*   Updated: 2024/11/13 00:07:59 by akoskine         ###   ########.fr       */
+/*   Updated: 2024/11/13 13:38:44 by akoskine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
+void	ft_free_str(char **str);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
